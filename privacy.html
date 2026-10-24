@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Highlights Vault Personal 隐私说明：本地数据、可选 Google Drive 同步、权限范围、备份保留和删除方式。">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+    <link rel="canonical" href="https://cheney-chenen.github.io/web-highlights-vault-info/privacy.html">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <title>隐私说明 / Privacy Policy — Web Highlights Vault Personal</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳至正文</a>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html" aria-label="返回 Web Highlights Vault 首页">
+        <img src="icon.svg" alt="" width="42" height="42">
+        <span>Web Highlights <strong>Vault</strong></span>
+      </a>
+      <nav aria-label="主导航"><a href="index.html">应用介绍</a><a href="privacy.html" aria-current="page">隐私说明</a></nav>
+    </header>
+
+    <main id="content" class="policy wrap">
+      <header class="policy-header">
+        <p class="eyebrow">Web Highlights Vault Personal</p>
+        <h1>隐私说明</h1>
+        <p class="policy-subtitle">Privacy Policy</p>
+        <p class="policy-date">生效及更新日期：2026 年 10 月 24 日</p>
+        <p class="lead">这个扩展先把阅读记录保存在你的浏览器中。Google Drive 同步由你选择开启。这份说明解释会处理哪些数据、数据去向，以及你如何停止同步或清理副本。</p>
+      </header>
+
+      <nav class="policy-toc" aria-label="隐私说明目录">
+        <a href="#scope">适用范围</a><a href="#data">处理的数据</a><a href="#google">Google 授权与用途</a><a href="#storage">存储与共享</a><a href="#control">保留与删除</a><a href="#website">本网站</a><a href="#contact">联系与更新</a>
+      </nav>
+
+      <article class="policy-body">
+        <section id="scope">
+          <h2>适用范围</h2>
+          <p>本说明适用于浏览器扩展 <strong>Web Highlights Vault</strong>、其在 Google 授权页面中使用的名称 <strong>Web Highlights Vault Personal</strong>，以及本站的应用介绍和隐私说明页面。它是个人阅读整理工具，不是 Google 官方产品。</p>
+          <p>本说明不替代你访问的网页、PDF 来源网站、Google、浏览器或网站托管服务各自的隐私说明。</p>
+        </section>
+
+        <section id="data">
+          <h2>扩展会处理哪些数据</h2>
+          <ul>
+            <li><strong>阅读记录：</strong>你保存的引用、高亮或下划线样式、颜色、笔记、标签、状态、时间及导出记录。</li>
+            <li><strong>来源与上下文：</strong>页面标题、URL、已捕获的网页可读正文、引用前后文、段落快照、定位锚点和内容版本信息。存下来的内容可能包含网页中的个人信息，请留意你选择归档的页面。</li>
+            <li><strong>PDF 相关信息：</strong>引用、上下文、页码、来源地址、文档指纹和定位信息。为加快重复打开，PDF 原始字节可能缓存于浏览器本地的独立缓存中；原始 PDF 和该缓存不加入 Google Drive 同步或 JSON 备份。</li>
+            <li><strong>设置与设备信息：</strong>随机生成的本地设备 ID、显示偏好、备份与同步状态，以及你选择的本地备份文件夹句柄。</li>
+            <li><strong>连接 Google Drive 后的账号信息：</strong>通过 Drive API 返回的账号标识、显示名及邮箱（若 Google 返回），用于显示所连接账号并防止将同一本地资料库误传到其他账号。</li>
+          </ul>
+          <p>网页访问权限用于选区、高亮绘制和定位恢复。它不表示扩展会把所有浏览历史自动上传；云端同步上传的是已经写入本地资料库的归档记录。</p>
+        </section>
+
+        <section id="google">
+          <h2>Google 授权与数据用途</h2>
+          <p>Google Drive 同步是可选功能。只有你在扩展设置中主动连接并同意 Google 授权请求后，才会启用。没有连接时，阅读记录保存在本地，仍可使用本地导出和备份。</p>
+          <p>扩展请求的 Drive 权限是：</p>
+          <code class="scope-code">https://www.googleapis.com/auth/drive.appdata</code>
+          <p>该权限用于访问此应用自己的隐藏应用数据区，而不是读取你整个网盘的普通文件。其用途仅限于保存设备快照、下载和合并其他设备的快照、创建或读取恢复副本，以及按保留策略清理本应用的旧日备份。</p>
+          <p>Google 访问令牌由 Chrome Identity API 获取和管理缓存。扩展在请求 Drive API 时使用令牌；不会要求你把 Google 密码输入到扩展或本站，也不会把授权令牌写入项目源码、公开网页或资料库备份。</p>
+          <p><strong>Google 用户数据仅用于用户选择的同步、备份和恢复功能，不用于广告投放、用户画像、数据出售或训练 AI 模型。</strong>扩展没有开发者自建的远端笔记数据库，也不提供将 Google 数据交给开发者人工查看的功能。</p>
+          <p>通过 Google API 获取的数据，其使用和传输遵循 <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>，包括其中的 Limited Use 要求。</p>
+        </section>
+
+        <section id="storage">
+          <h2>数据保存在哪里，会交给谁</h2>
+          <p><strong>浏览器本地：</strong>阅读记录和设置保存于当前浏览器个人资料的 IndexedDB、扩展存储或独立 PDF 缓存。卸载扩展、删除浏览器个人资料或清理浏览器数据可能使本地副本丢失。</p>
+          <p><strong>你选择的备份位置：</strong>导出和本地备份由浏览器下载，或写入你授权的文件夹。如果该文件夹由其他网盘软件同步，后续传输由该软件及其服务提供商处理。</p>
+          <p><strong>你的 Google Drive：</strong>连接后，完整同步快照和云端日备份发送到你的 Google 账号中本应用的专用数据区。快照包括已归档的网页正文和上下文，不只是笔记。传输使用 HTTPS，JSON 快照内容未做客户端端到端加密。</p>
+          <p><strong>网页与 PDF 来源服务：</strong>访问网页或打开远端 PDF 时，浏览器需要向相应来源服务请求内容。这些来源服务会按其自身规则处理网络请求。</p>
+          <p>本扩展不内置广告、分析统计或第三方错误上报服务。除上述由功能需要或你主动选择触发的数据流向外，没有把阅读资料发送给其他接收方的功能。你自行复制、导出或分享内容后的处理由你选择的接收方负责。</p>
+        </section>
+
+        <section id="control">
+          <h2>保留、停止同步与删除</h2>
+          <ul>
+            <li><strong>停止后续同步：</strong>在设置中点击 Disconnect Google Drive。扩展会停止后续同步并清除其缓存的 Google 授权信息；本地数据、账号绑定信息和已存在的云端副本不会自动删除。已经被服务器接收的上传无法撤回。</li>
+            <li><strong>撤销 Google 权限：</strong>可在 <a href="https://myaccount.google.com/connections" rel="noreferrer">Google 账号的第三方应用连接</a>中管理或撤销本应用的访问权限。撤销权限不等于删除已有文件。</li>
+            <li><strong>删除单条高亮：</strong>扩展保存删除标记，避免旧设备或旧备份将其重新带回。因此，点击删除不代表其文本已立刻从全部本地记录和历史备份中物理清除。</li>
+            <li><strong>云端副本：</strong>每台设备维护自己的同步快照；在有成功同步的 UTC 日期，最多创建一份本机日备份，保留最近 7 份。超过数量的本机旧日备份会被永久删除；其他设备的副本不会因此删除。</li>
+            <li><strong>本地恢复副本：</strong>合并远端变化前，在独立本地数据库保留最近 5 份合并前副本。备份、恢复副本或导出文件可能继续保留较早的内容。</li>
+            <li><strong>彻底清理：</strong>先在所有设备停止同步，再通过 Google Drive 的应用管理设置管理或删除本应用的隐藏数据，并清理各设备的扩展本地数据以及自行保存的导出和备份。只清理一台设备不一定清理其他副本；有其他设备继续连接时，资料还可能被重新上传。</li>
+          </ul>
+          <p>本地文件夹备份使用你在设置中选择的保留数量；已经导出到其他位置的文件，需要在对应位置单独管理。清理前请确认你希望保留的内容已有独立副本。</p>
+        </section>
+
+        <section id="website">
+          <h2>这个介绍网站本身</h2>
+          <p>本站是静态介绍页，没有登录表单、笔记上传接口、Google 授权回调或在线资料库，不会读取你的扩展存储或 Google Drive。页面代码不设置分析 Cookie，不加载第三方统计脚本或外部字体。</p>
+          <p>网站由 GitHub Pages 托管。托管方可能依照自己的规则处理 IP 地址和网络访问日志等信息，详情参见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub 隐私声明</a>。点击外部链接后，对方网站的规则适用。</p>
+        </section>
+
+        <section id="contact">
+          <h2>联系、反馈与说明更新</h2>
+          <p>本项目由 GitHub 用户 <a href="https://github.com/cheney-chenen" rel="noreferrer">cheney-chenen</a> 维护。有关本说明、数据处理或使用问题，请通过 <a href="https://github.com/cheney-chenen/web-highlights-vault-info/issues" rel="noreferrer">公开说明页仓库的 Issues</a>联系维护者。不要在公开反馈中附带笔记正文、完整备份、密码或授权令牌。</p>
+          <p>应用的数据处理方式变化时，会更新本说明及页面顶部的更新日期。如果未来增加当前未列出的用途或数据接收方，应先更新说明，并在需要时重新取得授权。</p>
+        </section>
+
+        <section class="english-summary" lang="en" aria-labelledby="english-title">
+          <h2 id="english-title">English summary</h2>
+          <p>Web Highlights Vault Personal is the Google OAuth application for the Web Highlights Vault browser extension. Highlights, notes, tags, captured page text, source URLs, context, and anchoring metadata are stored locally first. Optional Google Drive sync uses only the drive.appdata scope to manage this application's own hidden data, including snapshots and recovery copies. Original PDF files are not uploaded.</p>
+          <p>Google user data is used only for the sync, backup, and recovery features selected by the user, not for advertising, sale, profiling, or AI model training. There is no developer-hosted notes database. Disconnecting stops future sync but does not erase existing copies. Sync uses HTTPS and is not client-side end-to-end encrypted. This static website does not access extension data or Google Drive.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer wrap">
+      <p><strong>Web Highlights Vault Personal</strong><br>个人浏览器高亮与笔记扩展 · 非 Google 官方产品</p>
+      <div><a href="index.html">返回应用介绍</a><a href="https://github.com/cheney-chenen/web-highlights-vault-info/issues" rel="noreferrer">帮助与反馈</a></div>
+    </footer>
+  </body>
+</html>
