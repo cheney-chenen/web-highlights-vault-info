@@ -1,6 +1,6 @@
-# Web Highlights Vault Personal — public information
+# Web Highlights Vault — public information
 
-This repository contains only the static application homepage, privacy policy, stylesheet, and public icon for Web Highlights Vault Personal.
+This repository contains only the static application homepage, privacy policy, stylesheet, and public icon for Web Highlights Vault. Its personal Google sync configuration is in the Web Highlights Vault Personal Google Cloud project.
 
 - Homepage: https://cheney-chenen.github.io/web-highlights-vault-info/
 - Privacy policy: https://cheney-chenen.github.io/web-highlights-vault-info/privacy.html
